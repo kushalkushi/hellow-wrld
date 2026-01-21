@@ -2,173 +2,219 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DevOps Registration</title>
+  <title>DevOps Learning Platform</title>
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       margin: 0;
-    }
-
-    .form-wrapper {
-      background: #ffffff;
-      width: 420px;
-      padding: 30px 35px;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6fb;
       color: #333;
     }
 
-    p {
-      text-align: center;
-      color: #666;
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
-
-    hr {
-      border: none;
-      border-top: 1px solid #eee;
-      margin: 20px 0;
-    }
-
-    label {
-      display: block;
-      margin-top: 12px;
-      font-weight: bold;
-      color: #444;
-      font-size: 14px;
-    }
-
-    input[type="text"],
-    input[type="password"] {
-      width: 100%;
-      padding: 10px 12px;
-      margin-top: 6px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 14px;
-      transition: border 0.3s, box-shadow 0.3s;
-    }
-
-    input[type="text"]:focus,
-    input[type="password"]:focus {
-      border-color: #667eea;
-      outline: none;
-      box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
-    }
-
-    .registerbtn {
-      width: 100%;
-      background: #667eea;
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
       color: white;
-      border: none;
-      padding: 12px;
-      margin-top: 20px;
-      border-radius: 8px;
-      font-size: 16px;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h2 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
       font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 80px;
+      background: white;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .hero-text button {
+      background: #667eea;
+      border: none;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      border-radius: 8px;
       cursor: pointer;
       transition: background 0.3s, transform 0.2s;
     }
 
-    .registerbtn:hover {
+    .hero-text button:hover {
       background: #5a67d8;
       transform: translateY(-2px);
     }
 
-    .terms {
-      font-size: 13px;
-      color: #555;
+    .hero-image img {
+      width: 480px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Features Section */
+    .features {
+      padding: 60px 80px;
       text-align: center;
-      margin-top: 15px;
+      background: #f9fafe;
     }
 
-    .terms a {
-      color: #667eea;
-      text-decoration: none;
+    .features h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
     }
 
-    .terms a:hover {
-      text-decoration: underline;
+    .feature-cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
-    .signin {
-      text-align: center;
-      margin-top: 15px;
+    .card {
+      background: white;
+      width: 280px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
       font-size: 14px;
+      color: #666;
     }
 
-    .signin a {
-      color: #667eea;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .signin a:hover {
-      text-decoration: underline;
-    }
-
-    .thankyou {
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      padding: 25px;
       text-align: center;
-      margin-top: 25px;
-      font-size: 16px;
-      color: #333;
-      font-weight: bold;
+      margin-top: 40px;
     }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+      color: #bbb;
+    }
+
   </style>
 </head>
 <body>
 
-  <div class="form-wrapper">
-    <form action="action_page.php">
-      <h1>New User Registration</h1>
-      <p>Register for DevOps Learning by V Kishor Kumar</p>
-      <hr>
+  <!-- Header -->
+  <header>
+    <h2>DevOps Academy</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="index.html">Register</a>
+      <a href="#">Courses</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-      <label for="Name">Enter Your Name</label>
-      <input type="text" placeholder="Enter Full Name" name="Name" id="Name" required>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Learn DevOps the Practical Way</h1>
+      <p>
+        Master CI/CD, Jenkins, Docker, Kubernetes, AWS and real-world DevOps workflows.
+        Learn by building projects and deploying real applications.
+      </p>
+      <button onclick="window.location.href='index.html'">
+        Register Now
+      </button>
+    </div>
 
-      <label for="mobile">Enter Your Mobile</label>
-      <input type="text" placeholder="Enter Mobile Number" name="mobile" id="mobile" required>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="DevOps">
+    </div>
+  </section>
 
-      <label for="email">Enter Your Email</label>
-      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+  <!-- Features -->
+  <section class="features">
+    <h2>Why Choose Our DevOps Training?</h2>
 
-      <label for="psw">Password</label>
-      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-      <label for="psw-repeat">Repeat Password</label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-
-      <hr>
-
-      <div class="terms">
-        By creating an account you agree to our
-        <a href="#">Terms & Privacy</a>.
+    <div class="feature-cards">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt="Linux">
+        <h3>Linux & Shell</h3>
+        <p>Strong foundation in Linux commands, scripting and server management.</p>
       </div>
 
-      <button type="submit" class="registerbtn">Register</button>
-
-      <div class="signin">
-        Already have an account?
-        <a href="#">Sign in</a>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" alt="Docker">
+        <h3>Docker</h3>
+        <p>Build, ship and run containers. Learn real container workflows.</p>
       </div>
 
-      <div class="thankyou">
-        Thank you, Happy Learning 😊
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919852.png" alt="AWS">
+        <h3>AWS Cloud</h3>
+        <p>Hands-on AWS with EC2, S3, IAM, VPC and real deployments.</p>
       </div>
-    </form>
-  </div>
+
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="Jenkins">
+        <h3>Jenkins CI/CD</h3>
+        <p>Build CI/CD pipelines using Jenkins GUI and pipelines.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 DevOps Academy | Happy Learning 🚀</p>
+  </footer>
 
 </body>
 </html>
