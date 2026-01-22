@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DevOps Learning Platform</title>
+  <title>MemeOps Learning Platform</title>
   <style>
     body {
       margin: 0;
@@ -13,7 +13,7 @@
 
     /* Header */
     header {
-      background: linear-gradient(135deg, #667eea, #764ba2);
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
       color: white;
       padding: 20px 50px;
       display: flex;
@@ -65,7 +65,7 @@
     }
 
     .hero-text button {
-      background: #667eea;
+      background: #ff758c;
       border: none;
       color: white;
       padding: 14px 28px;
@@ -76,12 +76,12 @@
     }
 
     .hero-text button:hover {
-      background: #5a67d8;
+      background: #ff5f9e;
       transform: translateY(-2px);
     }
 
     .hero-image img {
-      width: 480px;
+      width: 420px;
       border-radius: 16px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     }
@@ -118,11 +118,6 @@
       transform: translateY(-8px);
     }
 
-    .card img {
-      width: 80px;
-      margin-bottom: 15px;
-    }
-
     .card h3 {
       margin-bottom: 10px;
     }
@@ -146,18 +141,17 @@
       font-size: 14px;
       color: #bbb;
     }
-
   </style>
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <h2>DevOps Academy</h2>
+    <h2>MemeOps Academy 😂</h2>
     <nav>
-      <a href="#">Home</a>
-      <a href="index.html">Register</a>
-      <a href="#">Courses</a>
+      <a href="#">Memes</a>
+      <a href="#">Templates</a>
+      <a href="#">Submit Meme</a>
       <a href="#">Contact</a>
     </nav>
   </header>
@@ -165,55 +159,51 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
-      <h1>Learn DevOps the Practical Way</h1>
+      <h1>When Jenkins Fails at 2 AM</h1>
       <p>
-        Master CI/CD, Jenkins, Docker, Kubernetes, AWS and real-world DevOps workflows.
-        Learn by building projects and deploying real applications.
+        DevOps life be like… pipelines broken, logs screaming,
+        and your manager asking: "Is it deployed yet?" 😭
       </p>
-      <button onclick="window.location.href='index.html'">
-        Register Now
+      <button onclick="alert('Relax bro. It’s just a meme 😆')">
+        See More Memes
       </button>
     </div>
 
     <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="DevOps">
+      <img src="https://media1.tenor.com/m/Q6gNKicg5acAAAAd/naa-chaavu-nenu-chastha-neekendunu-naa-ishtam.gif" alt="DevOps Meme">
     </div>
   </section>
 
   <!-- Features -->
   <section class="features">
-    <h2>Why Choose Our DevOps Training?</h2>
+    <h2>Relatable DevOps Moments</h2>
 
     <div class="feature-cards">
       <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt="Linux">
-        <h3>Linux & Shell</h3>
-        <p>Strong foundation in Linux commands, scripting and server management.</p>
+        <h3>🔥 Production Down</h3>
+        <p>"It worked in staging bro" – famous last words.</p>
       </div>
 
       <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" alt="Docker">
-        <h3>Docker</h3>
-        <p>Build, ship and run containers. Learn real container workflows.</p>
+        <h3>🐳 Docker Build Fails</h3>
+        <p>Missing semicolon? No. Missing sanity? Yes.</p>
       </div>
 
       <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/919/919852.png" alt="AWS">
-        <h3>AWS Cloud</h3>
-        <p>Hands-on AWS with EC2, S3, IAM, VPC and real deployments.</p>
+        <h3>☁ AWS Bill Arrives</h3>
+        <p>That moment when Free Tier says bye-bye.</p>
       </div>
 
       <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="Jenkins">
-        <h3>Jenkins CI/CD</h3>
-        <p>Build CI/CD pipelines using Jenkins GUI and pipelines.</p>
+        <h3>🚦 Jenkins Red Build</h3>
+        <p>One tiny change. Entire pipeline dead.</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2026 DevOps Academy | Happy Learning 🚀</p>
+    <p>© 2026 MemeOps Academy | Powered by Broken Pipelines 😂</p>
   </footer>
 
 </body>
