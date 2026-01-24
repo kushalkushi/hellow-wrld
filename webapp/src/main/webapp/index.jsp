@@ -3,18 +3,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DevOps Learning Hub</title>
+  <title>AutoVerse - Car Showcase</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: #0f172a;
+      background: #0b0f14;
       color: #e5e7eb;
     }
 
 ```
 header {
-  background: linear-gradient(135deg, #1e293b, #020617);
+  background: linear-gradient(135deg, #020617, #1e293b);
   padding: 20px 60px;
   display: flex;
   justify-content: space-between;
@@ -24,8 +24,8 @@ header {
 
 header h2 {
   margin: 0;
-  font-size: 26px;
-  color: #38bdf8;
+  font-size: 28px;
+  color: #f97316;
   letter-spacing: 1px;
 }
 
@@ -38,7 +38,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #38bdf8;
+  color: #f97316;
 }
 
 .hero {
@@ -54,7 +54,7 @@ nav a:hover {
 }
 
 .hero-text h1 {
-  font-size: 48px;
+  font-size: 52px;
   margin-bottom: 20px;
   color: #f8fafc;
 }
@@ -67,10 +67,10 @@ nav a:hover {
 }
 
 .hero-text button {
-  background: #38bdf8;
+  background: #f97316;
   border: none;
   color: #020617;
-  padding: 14px 32px;
+  padding: 14px 34px;
   font-size: 16px;
   border-radius: 10px;
   cursor: pointer;
@@ -78,59 +78,75 @@ nav a:hover {
 }
 
 .hero-text button:hover {
-  background: #0ea5e9;
+  background: #fb923c;
   transform: translateY(-3px);
 }
 
 .hero-image img {
-  width: 420px;
+  width: 460px;
   border-radius: 18px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
 }
 
-.features {
+.cars {
   padding: 70px 100px;
-  text-align: center;
   background: #020617;
+  text-align: center;
 }
 
-.features h2 {
-  font-size: 34px;
+.cars h2 {
+  font-size: 36px;
   margin-bottom: 50px;
   color: #f8fafc;
 }
 
-.feature-cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 28px;
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
-.card {
+.car-card {
   background: linear-gradient(145deg, #020617, #1e293b);
-  width: 300px;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid #334155;
 }
 
-.card:hover {
+.car-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.8);
 }
 
-.card h3 {
-  margin-bottom: 12px;
-  color: #38bdf8;
+.car-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
 }
 
-.card p {
-  font-size: 15px;
+.car-card-content {
+  padding: 22px;
+  text-align: left;
+}
+
+.car-card-content h3 {
+  margin: 0 0 10px;
+  color: #f97316;
+}
+
+.car-card-content p {
+  margin: 0 0 15px;
   color: #cbd5e1;
+  font-size: 15px;
   line-height: 1.6;
+}
+
+.car-card-content span {
+  font-weight: bold;
+  color: #f8fafc;
+  font-size: 16px;
 }
 
 footer {
@@ -152,59 +168,75 @@ footer p {
 <body>
 
   <header>
-    <h2>DevOps Learning Hub</h2>
+    <h2>AutoVerse</h2>
     <nav>
       <a href="#">Home</a>
-      <a href="#">Courses</a>
-      <a href="#">Labs</a>
+      <a href="#">Models</a>
+      <a href="#">Gallery</a>
       <a href="#">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
     <div class="hero-text">
-      <h1>Build. Break. Learn. Repeat.</h1>
+      <h1>Feel the Power. Drive the Future.</h1>
       <p>
-        Master Jenkins, Docker, Kubernetes, AWS and CI/CD the practical way.
-        Hands-on labs, real-world pipelines, and production-style workflows
-        designed for DevOps engineers.
+        Explore the world’s most iconic cars — from raw supercars to
+        cutting-edge electric vehicles. Performance, design and innovation
+        come together in one place.
       </p>
-      <button onclick="alert('Welcome to DevOps Learning Hub 🚀')">
-        Start Learning
+      <button onclick="alert('Welcome to AutoVerse 🚗')">
+        Explore Cars
       </button>
     </div>
 
 ```
 <div class="hero-image">
-  <img src="https://media.giphy.com/media/26BRzozg4TCBXv6QU/giphy.gif" alt="DevOps Animation">
+  <img src="https://images.unsplash.com/photo-1511910849309-0b1c9c97d5e2" alt="Supercar">
 </div>
 ```
 
   </section>
 
-  <section class="features">
-    <h2>What You’ll Practice</h2>
+  <section class="cars">
+    <h2>Featured Models</h2>
 
 ```
-<div class="feature-cards">
-  <div class="card">
-    <h3>⚙ Jenkins Pipelines</h3>
-    <p>Build freestyle and scripted pipelines with Maven, Git and Tomcat.</p>
+<div class="car-grid">
+  <div class="car-card">
+    <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a" alt="Lamborghini">
+    <div class="car-card-content">
+      <h3>Lamborghini Aventador</h3>
+      <p>6.5L V12, 730 HP. A true masterpiece of Italian engineering.</p>
+      <span>$393,695</span>
+    </div>
   </div>
 
-  <div class="card">
-    <h3>🐳 Docker & Containers</h3>
-    <p>Create images, run containers and push to registries.</p>
+  <div class="car-card">
+    <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def" alt="Tesla">
+    <div class="car-card-content">
+      <h3>Tesla Model S Plaid</h3>
+      <p>Electric performance sedan. 0–60 mph in under 2 seconds.</p>
+      <span>$89,990</span>
+    </div>
   </div>
 
-  <div class="card">
-    <h3>☁ AWS & Cloud</h3>
-    <p>EC2, VPC, IAM, S3 and real-world cloud deployments.</p>
+  <div class="car-card">
+    <img src="https://images.unsplash.com/photo-1493238792000-8113da705763" alt="BMW">
+    <div class="car-card-content">
+      <h3>BMW M5 Competition</h3>
+      <p>617 HP luxury performance with German precision.</p>
+      <span>$110,095</span>
+    </div>
   </div>
 
-  <div class="card">
-    <h3>🚀 Kubernetes</h3>
-    <p>Deploy apps, manage pods, services and rolling updates.</p>
+  <div class="car-card">
+    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Porsche">
+    <div class="car-card-content">
+      <h3>Porsche 911 Turbo S</h3>
+      <p>Legendary handling and blistering acceleration.</p>
+      <span>$216,300</span>
+    </div>
   </div>
 </div>
 ```
@@ -212,7 +244,7 @@ footer p {
   </section>
 
   <footer>
-    <p>© 2026 DevOps Learning Hub | Built with Jenkins, Docker & Coffee ☕</p>
+    <p>© 2026 AutoVerse | Designed for Car Enthusiasts 🚗</p>
   </footer>
 
 </body>
